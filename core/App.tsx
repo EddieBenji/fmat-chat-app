@@ -19,7 +19,7 @@ function App() {
             <div className="chat-messages">
                 {history.map((msg, index) => (
                     <div key={index} className={`message ${msg.role}`}>
-                        {msg.content}
+                        <span>{msg.content}</span>
                     </div>
                 ))}
             </div>

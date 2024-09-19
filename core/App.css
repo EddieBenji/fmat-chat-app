@@ -27,8 +27,9 @@
 }
 
 .message {
+    padding: 10px;
     max-width: 90%;
-    margin: 0 auto 10px auto;
+    margin: 10px auto;
     word-wrap: break-word;
 }
 
@@ -47,9 +48,6 @@
 
 .message.assistant {
     text-align: right;
-}
-
-.message.bot {
     background-color: #f1f0f0;
     align-self: flex-start;
 }
