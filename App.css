@@ -1,6 +1,6 @@
 .chat-container {
-    width: 400px;
-    max-width: 90%;
+    width: 800px;
+    margin: 0 auto;
     height: 600px;
     background-color: white;
     border-radius: 10px;
@@ -27,17 +27,26 @@
 }
 
 .message {
-    margin-bottom: 10px;
-    padding: 10px;
-    border-radius: 10px;
-    max-width: 80%;
+    max-width: 90%;
+    margin: 0 auto 10px auto;
     word-wrap: break-word;
 }
 
-.message.user {
+.message:not(.user) {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.message.user span {
+    padding: 10px;
+    border-radius: 10px;
     background-color: #007bff;
     color: white;
     align-self: flex-end;
+}
+
+.message.assistant {
+    text-align: right;
 }
 
 .message.bot {
